@@ -4,6 +4,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { ThemeProvider } from "@/components/theme-provider";
 import { RouteLoader } from "@/components/route-loader";
+import { InitialLoader } from "@/components/initial-loader";
 
 export const metadata: Metadata = {
   title: "Premium Minimal Portfolio",
@@ -24,6 +25,7 @@ export default function RootLayout({
       </head>
       <body className="flex flex-col min-h-screen bg-background text-foreground antialiased selection:bg-accent selection:text-white font-sans font-normal overflow-x-hidden">
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+          <InitialLoader />
           <RouteLoader />
           <Navbar />
           <main className="flex-1 flex flex-col">
