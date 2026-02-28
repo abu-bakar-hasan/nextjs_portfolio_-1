@@ -1,11 +1,11 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import React, { useEffect, useState, Suspense } from "react";
 import { usePathname, useSearchParams } from "next/navigation";
 import NProgress from "nprogress";
 import { Loader } from "./ui/Loader";
 
-export function RouteLoader() {
+function RouteLoaderInner() {
   const pathname = usePathname();
   const searchParams = useSearchParams();
   const [isNavigating, setIsNavigating] = useState(false);
@@ -95,5 +95,13 @@ export function RouteLoader() {
         Loading {destination}...
       </span>
     </div>
+  );
+}
+
+export function RouteLoader() {
+  return (
+    <Suspense fallback={null}>
+      <RouteLoaderInner />
+    </Suspense>
   );
 }
