@@ -26,8 +26,8 @@ export default function Footer() {
           
           <nav className="flex flex-wrap items-center gap-4 sm:gap-6 md:gap-10 text-xs sm:text-sm text-white/60 lowercase">
             <Link href="/" className="hover:text-white transition-colors">home</Link>
-            <Link href="#projects" className="hover:text-white transition-colors">projects</Link>
-            <Link href="#about" className="hover:text-white transition-colors">about</Link>
+            <Link href="/projects" className="hover:text-white transition-colors">projects</Link>
+            <Link href="/about" className="hover:text-white transition-colors">about</Link>
             <a href="https://x.com/abu_bakar_hasan" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">tw</a>
             <a href="https://www.instagram.com/abu_bakar_hasan?igsh=eTZrZ2VkbG83ajlx" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">ig</a>
           </nav>
