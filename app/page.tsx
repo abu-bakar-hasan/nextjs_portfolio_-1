@@ -18,7 +18,7 @@ export default function Home() {
          <div className="w-full max-w-[450px] aspect-square bg-[#ececec] dark:bg-foreground/5 mb-10 flex items-end justify-center rounded-sm overflow-hidden">
             <img 
                src="https://ik.imagekit.io/abubakarhasan/dummy2.webp" 
-               className="w-[90%] h-[95%] object-cover object-top grayscale contrast-[1.15] brightness-105" 
+               className="w-full h-[95%] object-cover object-top grayscale contrast-[1.15] brightness-105" 
                alt="Abu Bakar Hasan Portrait" 
             />
          </div>

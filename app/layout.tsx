@@ -7,7 +7,7 @@ import { RouteLoader } from "@/components/route-loader";
 import { InitialLoader } from "@/components/initial-loader";
 
 export const metadata: Metadata = {
-  title: "Premium Minimal Portfolio",
+  title: "Abu Bakar Hasan | Portfolio",
   description: "A professional portfolio built with a structure-first philosophy.",
 };
 
