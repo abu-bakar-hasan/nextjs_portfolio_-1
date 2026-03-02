@@ -106,7 +106,7 @@ export default function Home() {
         </div>
 
         {/* Hero Image */}
-        <div className="absolute bottom-0 right-0 w-[55%] h-[100dvh] z-0 pointer-events-none overflow-hidden origin-bottom">
+        <div className="absolute bottom-0 right-8 w-[55%] h-[100dvh] z-0 pointer-events-none overflow-hidden origin-bottom">
           <img 
             src="https://ik.imagekit.io/abubakarhasan/dummy2.webp" 
             alt="Abu Bakar Hasan Portrait" 
