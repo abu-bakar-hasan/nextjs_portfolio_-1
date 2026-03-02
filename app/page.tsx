@@ -28,20 +28,24 @@ export default function Home() {
             <h1 className="text-[80px] sm:text-[110px] font-normal tracking-tight text-foreground leading-[0.85] mb-4">
                Abu
             </h1>
-            <p className="text-sm sm:text-base text-foreground/80 flex items-center justify-center gap-2 mb-12">
-               <span className="w-4 h-[1px] bg-foreground/80"></span>
-               — It's ABU a design wizard
-            </p>
+            <div className="flex flex-col items-center gap-1.5 mb-12">
+              <h2 className="text-xl sm:text-2xl font-medium tracking-wide text-foreground">Abu Bakar Hasan</h2>
+              <p className="text-sm sm:text-base text-foreground/80 flex items-center justify-center gap-2">
+                 <span className="w-4 h-[1px] bg-foreground/80"></span>
+                 Web Developer & System Designer
+                 <span className="w-4 h-[1px] bg-foreground/80"></span>
+              </p>
+            </div>
 
             {/* Stats vertical */}
             <div className="flex flex-col gap-8 w-full">
                <div className="flex flex-col items-center gap-1">
-                  <h3 className="text-[40px] sm:text-5xl font-light text-foreground leading-none">+200</h3>
-                  <p className="text-xs sm:text-sm font-medium text-foreground/60">Website Launched</p>
+                  <h3 className="text-[32px] sm:text-[40px] font-light text-foreground leading-none">Mar 2026</h3>
+                  <p className="text-xs sm:text-sm font-medium text-foreground/60 uppercase tracking-wider">1st Major Launch</p>
                </div>
                <div className="flex flex-col items-center gap-1">
-                  <h3 className="text-[40px] sm:text-5xl font-light text-foreground leading-none">99.9%</h3>
-                  <p className="text-xs sm:text-sm font-medium text-foreground/60">Client Satisfaction</p>
+                  <h3 className="text-[32px] sm:text-[40px] font-light text-foreground leading-none">99.9%</h3>
+                  <p className="text-xs sm:text-sm font-medium text-foreground/60 uppercase tracking-wider">Client Satisfaction</p>
                </div>
             </div>
          </div>
@@ -70,24 +74,27 @@ export default function Home() {
           {/* Stats Section */}
           <div className="flex gap-16 xl:gap-24 mb-24">
             <div className="flex flex-col gap-1">
-              <h3 className="text-5xl font-light tracking-tight text-foreground/90">+200</h3>
-              <p className="text-sm xl:text-base text-foreground/50 font-medium whitespace-nowrap">Website Launched</p>
+              <h3 className="text-4xl xl:text-5xl font-light tracking-tight text-foreground/90">Mar 2026</h3>
+              <p className="text-sm xl:text-base text-foreground/50 font-medium whitespace-nowrap uppercase tracking-wider">1st Major Launch</p>
             </div>
             <div className="flex flex-col gap-1">
-              <h3 className="text-5xl font-light tracking-tight text-foreground/90">99.9%</h3>
-              <p className="text-sm xl:text-base text-foreground/50 font-medium whitespace-nowrap">Client Satisfaction</p>
+              <h3 className="text-4xl xl:text-5xl font-light tracking-tight text-foreground/90">99.9%</h3>
+              <p className="text-sm xl:text-base text-foreground/50 font-medium whitespace-nowrap uppercase tracking-wider">Client Satisfaction</p>
             </div>
           </div>
 
           {/* Hero Text */}
-          <div className="space-y-4 mb-32">
-            <h1 className="text-[130px] xl:text-[170px] leading-[0.8] font-normal tracking-tight text-foreground -ml-2 text-balance relative z-20">
+          <div className="space-y-4 mb-32 relative z-20">
+            <h1 className="text-[130px] xl:text-[170px] leading-[0.8] font-normal tracking-tight text-foreground -ml-2 text-balance">
               Abu
             </h1>
-            <p className="text-lg xl:text-xl text-foreground flex items-center gap-4 relative z-20">
-              <span className="w-8 h-[1px] bg-foreground"></span>
-              — It's ABU a design wizard
-            </p>
+            <div className="flex flex-col gap-2 pl-2">
+              <h2 className="text-3xl xl:text-4xl font-medium tracking-wide text-foreground">Abu Bakar Hasan</h2>
+              <p className="text-lg xl:text-xl text-foreground/80 flex items-center gap-4">
+                <span className="w-8 h-[1px] bg-foreground"></span>
+                Web Developer & System Designer
+              </p>
+            </div>
           </div>
 
           {/* Scroll action */}
@@ -99,11 +106,11 @@ export default function Home() {
         </div>
 
         {/* Hero Image */}
-        <div className="absolute bottom-0 right-0 w-[55%] h-[95vh] z-0 pointer-events-none overflow-hidden origin-bottom">
+        <div className="absolute bottom-0 right-0 w-[55%] h-[100dvh] z-0 pointer-events-none overflow-hidden origin-bottom">
           <img 
             src="https://ik.imagekit.io/abubakarhasan/dummy2.webp" 
             alt="Abu Bakar Hasan Portrait" 
-            className="w-full h-full object-cover object-top transform scale-[1.05] translate-y-12 grayscale contrast-[1.10] brightness-100 opacity-95 sepia-[0.05] pointer-events-none" 
+            className="w-full h-full object-cover object-top grayscale contrast-[1.10] brightness-100 opacity-95 sepia-[0.05] pointer-events-none" 
           />
         </div>
       </div>
