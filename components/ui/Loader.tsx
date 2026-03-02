@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { motion, Variants } from "framer-motion";
 
 // The 4 paths extracted from your SVG
 const SVG_PATHS = [
@@ -11,13 +11,13 @@ const SVG_PATHS = [
 ];
 
 // Variants for infinite draw-and-fill sequence
-const pathVariants = (index: number) => ({
+const pathVariants: Variants = {
   initial: {
     pathLength: 0,
     fillOpacity: 0,
     strokeOpacity: 0,
   },
-  animate: {
+  animate: (index: number) => ({
     // 1. Draw outline, 2. Fill, 3. Hold, 4. Fade out
     pathLength: [0, 1, 1, 0],
     fillOpacity: [0, 0, 1, 0],
@@ -29,8 +29,8 @@ const pathVariants = (index: number) => ({
       repeat: Infinity,
       delay: index * 0.2, // Stagger effect
     },
-  },
-});
+  }),
+};
 
 export function Loader({ 
   className = "size-44 sm:size-52 text-foreground" 
@@ -59,7 +59,7 @@ export function Loader({
               key={index}
               d={pathData}
               custom={index}
-              variants={pathVariants(index)}
+              variants={pathVariants}
             />
           ))}
         </motion.g>
