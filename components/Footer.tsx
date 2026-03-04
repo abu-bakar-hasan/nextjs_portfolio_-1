@@ -14,7 +14,7 @@ export default function Footer() {
             </h2>
             <p className="text-base sm:text-lg text-foreground/80 mb-8 font-medium">Got an idea?</p>
             <Link 
-              href="/contact" 
+              href="/contact?from=home" 
               className="inline-flex items-center justify-center px-8 py-3.5 text-sm sm:text-base font-medium transition-all bg-foreground text-background rounded-full hover:scale-[1.02] active:scale-[0.98]"
             >
               Let's Connect

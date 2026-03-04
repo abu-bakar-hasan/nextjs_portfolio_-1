@@ -13,28 +13,28 @@ export default function ServicesPage() {
       title: "Custom Web Development",
       description: "Full-stack web apps built with Next.js and modern tooling",
       tags: ["Next.js", "React", "Node.js", "MongoDB"],
-      link: "/contact"
+      link: "/contact?from=services&interest=web-development"
     },
     {
       id: "02",
       title: "System Design Consultation",
       description: "Architecture planning for startups that need to scale",
       tags: ["System Design", "API Design", "Database"],
-      link: "/contact"
+      link: "/contact?from=services&interest=system-design"
     },
     {
       id: "03",
       title: "UI to Code",
       description: "Pixel-perfect Figma to production conversion",
       tags: ["Figma", "Tailwind CSS", "Responsive Design"],
-      link: "/contact"
+      link: "/contact?from=services&interest=ui-to-code"
     },
     {
       id: "04",
       title: "Performance Audit",
       description: "Speed, SEO, and accessibility improvements for existing sites",
       tags: ["Lighthouse", "Core Web Vitals", "SEO"],
-      link: "/contact"
+      link: "/contact?from=services&interest=performance-audit"
     }
   ];
 

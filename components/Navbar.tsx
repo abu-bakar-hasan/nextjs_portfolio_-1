@@ -54,7 +54,7 @@ export default function Navbar() {
           <div className="flex items-center gap-4 sm:gap-6 relative z-50">
             <ThemeToggle />
             <Link 
-              href="/contact" 
+              href="/contact?from=home" 
               className="group hidden sm:inline-flex items-center gap-1.5 text-xs sm:text-sm font-medium border-b border-foreground/30 hover:border-foreground pb-0.5 transition-all"
             >
               Book A Call <ArrowUpRight className="w-3.5 h-3.5 sm:w-4 sm:h-4 opacity-70 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 group-hover:opacity-100 transition-all" />
@@ -107,7 +107,7 @@ export default function Navbar() {
                 className="mt-6"
               >
                 <Link 
-                  href="/contact" 
+                  href="/contact?from=home" 
                   onClick={() => setIsMobileMenuOpen(false)}
                   className="sm:hidden inline-flex items-center justify-between w-full text-2xl font-medium text-foreground py-4 group"
                 >

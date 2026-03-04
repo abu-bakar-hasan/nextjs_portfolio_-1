@@ -133,7 +133,7 @@ export default function BlogPost() {
             </div>
             
             <Link 
-              href="/contact"
+              href={`/contact?from=blog&interest=${post.slug}&post=${encodeURIComponent(post.title)}`}
               className="inline-flex items-center gap-2 px-6 py-3 bg-foreground text-background text-sm font-semibold rounded-lg hover:opacity-90 transition-opacity whitespace-nowrap group/contact"
             >
               Book a Call <ArrowRight className="w-4 h-4 group-hover/contact:translate-x-1 transition-transform" />
