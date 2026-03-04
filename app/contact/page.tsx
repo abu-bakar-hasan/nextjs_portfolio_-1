@@ -74,7 +74,7 @@ export default function Contact() {
                 name="phone" 
                 id="phone"
                 className="w-full px-4 py-2.5 rounded-lg border border-border/80 bg-background/50 focus:bg-background focus:outline-none focus:ring-2 focus:ring-foreground/20 transition-all"
-                placeholder="+1 234 567 890"
+                placeholder="+91 999 888 1122"
               />
             </div>
           </div>
