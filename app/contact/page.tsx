@@ -69,13 +69,13 @@ export default function Contact() {
         </a>
         <a href="https://www.instagram.com/abu_bakar_hasan" className="group inline-flex items-center gap-3 text-lg sm:text-xl md:text-2xl font-medium tracking-tight text-foreground hover:opacity-70 transition-opacity">
           <Instagram className="w-6 h-6 sm:w-7 sm:h-7 opacity-70 group-hover:opacity-100 shrink-0" />
-          <span>Instagram</span>
+          <span>abu_bakar_hasan</span>
         </a>
       </div>
 
       {/* Right Area: Form */}
       <div className="w-full md:w-[55%] border border-border/60 rounded-2xl p-6 sm:p-8 bg-card/30 backdrop-blur-sm shadow-sm">
-        <h2 className="text-xl font-medium mb-6">Send Me a Message</h2>
+        <h2 className="text-xl font-medium mb-6">Get in touch</h2>
         <form onSubmit={onSubmit} className="flex flex-col gap-5">
           <div className="flex flex-col sm:flex-row gap-5">
            <div className="flex flex-col gap-1.5 flex-1">
