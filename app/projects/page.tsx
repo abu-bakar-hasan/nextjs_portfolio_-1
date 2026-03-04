@@ -1,4 +1,4 @@
-import { ArrowUpRight } from "lucide-react";
+import { ArrowUpRight01Icon as ArrowUpRight } from "hugeicons-react";
 import Link from "next/link";
 
 const projects = [

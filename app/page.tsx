@@ -1,4 +1,4 @@
-import { ArrowDown } from "lucide-react";
+import { ArrowDown01Icon as ArrowDown } from "hugeicons-react";
 import Link from "next/link";
 
 export default function Home() {

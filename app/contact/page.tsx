@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { Mail } from "lucide-react";
+import { Mail01Icon as Mail, InstagramIcon as Instagram } from "hugeicons-react";
 import { toast } from "sonner";
 
 export default function Contact() {
@@ -66,6 +66,10 @@ export default function Contact() {
         >
           <Mail className="w-6 h-6 sm:w-7 sm:h-7 opacity-70 group-hover:opacity-100 shrink-0" />
           <span>abubakarhasan2505@gmail.com</span>
+        </a>
+        <a href="https://www.instagram.com/abu_bakar_hasan" className="group inline-flex items-center gap-3 text-lg sm:text-xl md:text-2xl font-medium tracking-tight text-foreground hover:opacity-70 transition-opacity">
+          <Instagram className="w-6 h-6 sm:w-7 sm:h-7 opacity-70 group-hover:opacity-100 shrink-0" />
+          <span>Instagram</span>
         </a>
       </div>
 

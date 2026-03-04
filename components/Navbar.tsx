@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
-import { ArrowUpRight, Menu as MenuIcon, X } from 'lucide-react';
+import { ArrowUpRight01Icon as ArrowUpRight, Menu01Icon as MenuIcon, Cancel01Icon as X } from 'hugeicons-react';
 import { ThemeToggle } from '@/components/theme-toggle';
 import { motion, AnimatePresence } from 'framer-motion';
 

@@ -1,4 +1,4 @@
-import { Code2, Database, Layout, Server } from "lucide-react";
+import { CodeIcon as Code2, Database01Icon as Database, Layout01Icon as Layout, CloudServerIcon as Server } from "hugeicons-react";
 
 export default function About() {
   return (
