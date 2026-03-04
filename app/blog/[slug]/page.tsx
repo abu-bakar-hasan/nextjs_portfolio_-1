@@ -3,9 +3,10 @@ import type { Metadata } from "next";
 import ClientBlogPost from "./ClientBlogPost";
 
 export async function generateMetadata(
-  { params }: { params: { slug: string } }
+  { params }: { params: Promise<{ slug: string }> }
 ): Promise<Metadata> {
-  const post = blogs.find(b => b.slug === params.slug)
+  const { slug } = await params;
+  const post = blogs.find(b => b.slug === slug)
 
   if (!post) {
     return {
