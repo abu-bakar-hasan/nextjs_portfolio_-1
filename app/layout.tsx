@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   title: "Abu Bakar Hasan | Portfolio",
   description: "A professional portfolio built with a structure-first philosophy.",
   icons: {
-    icon: "https://ik.imagekit.io/abubakarhasan/abh.svg"
+    icon: "https://ik.imagekit.io/abubakarhasan/abh(white).svg"
   }
 };
 
