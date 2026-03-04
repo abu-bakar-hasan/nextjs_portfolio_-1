@@ -1,5 +1,10 @@
 import Link from "next/link";
 import { ArrowRight01Icon as ArrowRight } from "hugeicons-react";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Services"
+};
 
 export default function ServicesPage() {
   const services = [

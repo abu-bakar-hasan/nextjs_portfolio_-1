@@ -1,4 +1,9 @@
 import { CodeIcon as Code2, Database01Icon as Database, Layout01Icon as Layout, CloudServerIcon as Server } from "hugeicons-react";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "About"
+};
 
 export default function About() {
   return (

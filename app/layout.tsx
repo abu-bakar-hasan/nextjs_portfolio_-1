@@ -8,7 +8,10 @@ import { InitialLoader } from "@/components/initial-loader";
 import { Toaster } from "@/components/ui/sonner";
 
 export const metadata: Metadata = {
-  title: "Abu Bakar Hasan | Portfolio",
+  title: {
+    default: "Abu Bakar Hasan — Web Developer & System Designer",
+    template: "%s — Abu Bakar Hasan"
+  },
   description: "A professional portfolio built with a structure-first philosophy.",
   icons: {
     icon: "https://ik.imagekit.io/abubakarhasan/abh(white).svg"

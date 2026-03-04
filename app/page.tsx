@@ -1,5 +1,10 @@
+import type { Metadata } from "next";
 import { ArrowDown01Icon as ArrowDown } from "hugeicons-react";
 import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "Abu Bakar Hasan — Web Developer & System Designer"
+};
 
 export default function Home() {
   return (
