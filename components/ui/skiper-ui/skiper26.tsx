@@ -1,6 +1,6 @@
 "use client";
 
-import { Moon01Icon as Moon, Sun01Icon as Sun } from "hugeicons-react";
+import { Moon02Icon as Moon, Sun03Icon as Sun } from "hugeicons-react";
 import { useTheme } from "next-themes";
 import React, { useCallback, useEffect, useState } from "react";
 
