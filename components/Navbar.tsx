@@ -36,7 +36,7 @@ export default function Navbar() {
           <div className="flex items-center gap-8 lg:gap-20">
             <Link href="/" onClick={() => setIsMobileMenuOpen(false)} className="flex items-center justify-center transition-opacity group hover:opacity-80 relative z-50">
               <img 
-                src="https://ik.imagekit.io/abubakarhasan/abhlogo.svg" 
+                src="https://ik.imagekit.io/abubakarhasan/abh.svg" 
                 alt="Abu Bakar Hasan Logo" 
                 className="w-12 h-12 sm:w-16 sm:h-16 lg:w-20 lg:h-20 rounded-full object-cover invert-0 dark:invert transition-all" 
               />
