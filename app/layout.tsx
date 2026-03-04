@@ -5,6 +5,7 @@ import Footer from "@/components/Footer";
 import { ThemeProvider } from "@/components/theme-provider";
 import { RouteLoader } from "@/components/route-loader";
 import { InitialLoader } from "@/components/initial-loader";
+import { Toaster } from "@/components/ui/sonner";
 
 export const metadata: Metadata = {
   title: "Abu Bakar Hasan | Portfolio",
@@ -32,6 +33,7 @@ export default function RootLayout({
             {children}
           </main>
           <Footer />
+          <Toaster />
         </ThemeProvider>
       </body>
     </html>
