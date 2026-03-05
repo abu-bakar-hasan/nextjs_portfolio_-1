@@ -9,7 +9,7 @@ export default function About() {
   return (
     <div className="w-full max-w-5xl mx-auto px-8 py-12">
       <h1 className="text-3xl font-semibold tracking-tight mb-8">About Me</h1>
-      
+
       <div className="grid gap-16 md:grid-cols-[1fr_2fr]">
         {/* Background Section */}
         <section>
@@ -17,11 +17,11 @@ export default function About() {
         </section>
         <section className="text-foreground/80 leading-relaxed space-y-4">
           <p>
-            I am a software engineer focused on building high-performance, structurally sound, and accessible digital experiences. 
+            I am a software engineer focused on building high-performance, structurally sound, and accessible digital experiences.
             Throughout my career, I've prioritized clean architecture and maintainable codebases over short-lived trends.
           </p>
           <p>
-            My approach is rooted in simplicity and intention. Every line of code should serve a purpose, and every interface 
+            My approach is rooted in simplicity and intention. Every line of code should serve a purpose, and every interface
             should intuitively guide the user without unnecessary distractions.
           </p>
         </section>
@@ -30,11 +30,11 @@ export default function About() {
         <section>
           <h2 className="text-lg font-semibold tracking-tight mb-4">Technical Skills</h2>
         </section>
-        
+
         <section className="grid sm:grid-cols-2 gap-8">
           <div className="space-y-3">
             <div className="flex items-center gap-2 text-foreground font-medium">
-              <Layout className="w-4 h-4 text-accent" />
+              <Layout className="w-4 h-4 text-foreground" />
               <span>Frontend Development</span>
             </div>
             <p className="text-sm text-foreground/70 leading-relaxed">
@@ -44,7 +44,7 @@ export default function About() {
 
           <div className="space-y-3">
             <div className="flex items-center gap-2 text-foreground font-medium">
-              <Server className="w-4 h-4 text-accent" />
+              <Server className="w-4 h-4 text-foreground" />
               <span>Backend & APIs</span>
             </div>
             <p className="text-sm text-foreground/70 leading-relaxed">
@@ -54,7 +54,7 @@ export default function About() {
 
           <div className="space-y-3">
             <div className="flex items-center gap-2 text-foreground font-medium">
-              <Database className="w-4 h-4 text-accent" />
+              <Database className="w-4 h-4 text-foreground" />
               <span>Database & Cloud</span>
             </div>
             <p className="text-sm text-foreground/70 leading-relaxed">
@@ -64,7 +64,7 @@ export default function About() {
 
           <div className="space-y-3">
             <div className="flex items-center gap-2 text-foreground font-medium">
-              <Code2 className="w-4 h-4 text-accent" />
+              <Code2 className="w-4 h-4 text-foreground" />
               <span>Architecture & Tools</span>
             </div>
             <p className="text-sm text-foreground/70 leading-relaxed">
