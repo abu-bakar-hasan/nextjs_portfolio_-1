@@ -7,29 +7,29 @@ export const metadata: Metadata = {
 };
 
 const projects = [
-  { 
-    title: "Project Alpha", 
-    description: "A highly modular e-commerce platform built for scale.", 
+  {
+    title: "Project Alpha",
+    description: "A highly modular e-commerce platform built for scale.",
     tags: ["Next.js", "TypeScript", "Tailwind"],
-    link: "#" 
+    link: "#"
   },
-  { 
-    title: "Project Beta", 
-    description: "A high-performance analytics dashboard processing live data.", 
+  {
+    title: "Project Beta",
+    description: "A high-performance analytics dashboard processing live data.",
     tags: ["React", "Node.js", "PostgreSQL"],
-    link: "#" 
+    link: "#"
   },
-  { 
-    title: "Project Gamma", 
-    description: "An elegant, structurally focused CMS for content creators.", 
+  {
+    title: "Project Gamma",
+    description: "An elegant, structurally focused CMS for content creators.",
     tags: ["GraphQL", "Next.js", "MongoDB"],
-    link: "#" 
+    link: "#"
   },
-  { 
-    title: "Project Delta", 
-    description: "Minimalist mobile application for seamless interactions.", 
+  {
+    title: "Project Delta",
+    description: "Minimalist mobile application for seamless interactions.",
     tags: ["React Native", "Expo", "Zustand"],
-    link: "#" 
+    link: "#"
   }
 ];
 
@@ -45,8 +45,8 @@ export default function Projects() {
         {projects.map((project, idx) => (
           <Link key={idx} href={project.link} className="group block p-6 border border-foreground/10 hover:border-accent/30 transition-colors bg-white/5">
             <div className="flex justify-between items-start mb-4">
-              <h2 className="text-lg font-medium tracking-tight group-hover:text-accent transition-colors">{project.title}</h2>
-              <ArrowUpRight className="w-5 h-5 text-foreground/40 group-hover:text-accent transition-colors group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+              <h2 className="text-lg font-medium tracking-tight group-hover:opacity-80 transition-opacity">{project.title}</h2>
+              <ArrowUpRight className="w-5 h-5 text-foreground/40 group-hover:text-foreground transition-all group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
             </div>
             <p className="text-foreground/70 text-sm mb-6 leading-relaxed">
               {project.description}
