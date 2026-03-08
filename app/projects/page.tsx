@@ -6,34 +6,25 @@ export const metadata: Metadata = {
   title: "Projects"
 };
 
-const projects = [
-  {
-    title: "Project Alpha",
-    description: "A highly modular e-commerce platform built for scale.",
-    tags: ["Next.js", "TypeScript", "Tailwind"],
-    link: "#"
-  },
-  {
-    title: "Project Beta",
-    description: "A high-performance analytics dashboard processing live data.",
-    tags: ["React", "Node.js", "PostgreSQL"],
-    link: "#"
-  },
-  {
-    title: "Project Gamma",
-    description: "An elegant, structurally focused CMS for content creators.",
-    tags: ["GraphQL", "Next.js", "MongoDB"],
-    link: "#"
-  },
-  {
-    title: "Project Delta",
-    description: "Minimalist mobile application for seamless interactions.",
-    tags: ["React Native", "Expo", "Zustand"],
-    link: "#"
-  }
-];
+import { headers } from "next/headers";
+import { Project } from "@/lib/types";
 
-export default function Projects() {
+async function getProjects(): Promise<Project[]> {
+  try {
+    const headersList = await headers();
+    const host = headersList.get("host") || 'localhost:3000';
+    const protocol = process.env.NODE_ENV === "development" ? "http" : "https";
+
+    const res = await fetch(`${protocol}://${host}/api/projects`, { cache: 'no-store' });
+    if (!res.ok) return [];
+    return res.json();
+  } catch (error) {
+    return [];
+  }
+}
+
+export default async function Projects() {
+  const projects = await getProjects();
   return (
     <div className="w-full max-w-5xl mx-auto px-8 py-12">
       <div className="max-w-2xl mb-12">

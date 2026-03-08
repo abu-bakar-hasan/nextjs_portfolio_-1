@@ -113,6 +113,8 @@ body {
   --sidebar-accent-foreground: oklch(0.205 0 0);
   --sidebar-border: oklch(0.922 0 0);
   --sidebar-ring: oklch(0.708 0 0);
+  --skeleton-base: #e5e5e5;
+  --skeleton-highlight: #f3f3f3;
 }
 
 .dark {
@@ -147,6 +149,8 @@ body {
   --sidebar-accent-foreground: oklch(0.985 0 0);
   --sidebar-border: oklch(1 0 0 / 10%);
   --sidebar-ring: oklch(0.556 0 0);
+  --skeleton-base: #2a2a2a;
+  --skeleton-highlight: #3a3a3a;
 }
 
 @media print {
@@ -290,3 +294,24 @@ body {
 
 /* Hidden on screen, shown only on print */
 #print-resume { display: none; }
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+.skeleton {
+  background-image: linear-gradient(
+    90deg,
+    var(--skeleton-base) 25%,
+    var(--skeleton-highlight) 50%,
+    var(--skeleton-base) 75%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite linear;
+  border-radius: 4px;
+}

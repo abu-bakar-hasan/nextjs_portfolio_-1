@@ -3,26 +3,26 @@
 import { useState } from "react";
 import Link from "next/link";
 import { ArrowRight01Icon as ArrowRight } from "hugeicons-react";
-import { blogs } from "@/lib/blogs";
+import { Blog } from "@/lib/types";
 
-const posts = blogs.map((b, i) => ({
-  id: String(i + 1).padStart(2, '0'),
-  slug: b.slug,
-  title: b.title,
-  excerpt: b.excerpt,
-  tags: b.tags,
-  date: b.publishedAt,
-  readTime: b.readTime,
-}));
+export default function ClientBlogList({ initialBlogs }: { initialBlogs: Blog[] }) {
+  const posts = initialBlogs.map((b, i) => ({
+    id: String(i + 1).padStart(2, '0'),
+    slug: b.slug,
+    title: b.title,
+    excerpt: b.excerpt,
+    tags: b.tags,
+    date: b.publishedAt,
+    readTime: b.readTime,
+  }));
 
-// Extract unique tags and add 'All'
-const allTags = ["All", ...Array.from(new Set(posts.flatMap(post => post.tags)))];
+  // Extract unique tags and add 'All'
+  const allTags = ["All", ...Array.from(new Set(posts.flatMap(post => post.tags)))];
 
-export default function BlogList() {
   const [activeTag, setActiveTag] = useState("All");
 
-  const filteredPosts = activeTag === "All" 
-    ? posts 
+  const filteredPosts = activeTag === "All"
+    ? posts
     : posts.filter(post => post.tags.includes(activeTag));
 
   return (
@@ -41,11 +41,10 @@ export default function BlogList() {
           <button
             key={tag}
             onClick={() => setActiveTag(tag)}
-            className={`whitespace-nowrap text-sm font-medium transition-colors pb-2 ${
-              activeTag === tag
+            className={`whitespace-nowrap text-sm font-medium transition-colors pb-2 ${activeTag === tag
                 ? "text-foreground border-b-2 border-foreground"
                 : "text-foreground/50 hover:text-foreground/80 border-b-2 border-transparent"
-            }`}
+              }`}
           >
             {tag}
           </button>
@@ -55,11 +54,9 @@ export default function BlogList() {
       {/* Blog List */}
       <div className="flex flex-col border-t border-border/50">
         {filteredPosts.map((post) => (
-          <Link 
-            key={post.id} 
+          <Link
+            key={post.id}
             href={`/blog/${post.slug}`}
-            target="_blank"
-            rel="noopener noreferrer"
             className="group flex flex-col lg:flex-row py-8 sm:py-12 border-b border-border/50 hover:bg-foreground/[0.02] transition-colors relative"
           >
             {/* Number */}
@@ -69,7 +66,7 @@ export default function BlogList() {
 
             {/* Content Container */}
             <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between flex-1 gap-6 lg:gap-12 w-full">
-              
+
               {/* Title, Excerpt & Tags */}
               <div className="flex flex-col gap-3 lg:gap-4 flex-1">
                 <h2 className="text-xl sm:text-2xl font-semibold text-foreground tracking-tight transition-colors">
@@ -80,8 +77,8 @@ export default function BlogList() {
                 </p>
                 <div className="flex flex-wrap gap-2 mt-2">
                   {post.tags.map((tag, tagIndex) => (
-                    <span 
-                      key={tagIndex} 
+                    <span
+                      key={tagIndex}
                       className="inline-flex items-center justify-center px-3 py-1 text-xs font-semibold text-foreground/60 border border-border/60 rounded-full bg-transparent"
                     >
                       {tag}
@@ -97,7 +94,7 @@ export default function BlogList() {
                   <span className="lg:hidden w-1 h-1 rounded-full bg-foreground/20"></span>
                   <span>{post.readTime}</span>
                 </div>
-                
+
                 <div className="inline-flex items-center gap-2 text-sm sm:text-base font-medium text-foreground hover:text-foreground/80 transition-colors mt-auto pt-2 lg:pt-6 group/cta">
                   Read <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 transition-transform group-hover/cta:translate-x-1" />
                 </div>
