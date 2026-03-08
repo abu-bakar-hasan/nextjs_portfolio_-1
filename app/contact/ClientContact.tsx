@@ -2,7 +2,7 @@
 
 import { useState, useEffect, Suspense } from "react";
 import { useSearchParams } from "next/navigation";
-import { Mail01Icon as Mail, InstagramIcon as Instagram, Cancel01Icon as X } from "hugeicons-react";
+import { Mail01Icon as Mail, InstagramIcon as Instagram, Cancel01Icon as X, Facebook01Icon as Facebook, Linkedin01Icon as Linkedin } from "hugeicons-react";
 import { toast } from "sonner";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 
@@ -14,7 +14,7 @@ function ContactForm() {
 
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [showBanner, setShowBanner] = useState(false);
-  
+
   const [serviceValue, setServiceValue] = useState<string>("");
   const [subjectValue, setSubjectValue] = useState("");
 
@@ -56,12 +56,12 @@ function ContactForm() {
     event.preventDefault();
     setIsSubmitting(true);
     const toastId = toast.loading("Sending message...");
-    
+
     // Store reference to form before async operations since event.currentTarget becomes null
     const form = event.currentTarget;
     const formData = new FormData(form);
     formData.append("access_key", "4b0ceb2e-5449-4b8f-b71a-45255fd93fbd");
-    
+
     // Add custom selection fields that track attribution directly back to forms organically.
     if (fromParam) formData.append("From Page", fromParam);
     if (interestParam) formData.append("Interest", interestParam);
@@ -112,25 +112,25 @@ function ContactForm() {
           </button>
         </div>
       )}
-      
+
       <form onSubmit={onSubmit} className="flex flex-col gap-5">
         <div className="flex flex-col sm:flex-row gap-5">
-         <div className="flex flex-col gap-1.5 flex-1">
+          <div className="flex flex-col gap-1.5 flex-1">
             <label htmlFor="name" className="text-sm font-medium text-foreground/80">Name</label>
             <input
               type="text"
               name="name"
               id="name"
-              required 
+              required
               className="w-full px-4 py-2.5 rounded-lg border border-border/80 bg-background/50 focus:bg-background focus:outline-none focus:ring-2 focus:ring-foreground/20 transition-all"
               placeholder="John Doe"
             />
           </div>
           <div className="flex flex-col gap-1.5 flex-1">
-          <label htmlFor="phone" className="text-sm font-medium text-foreground/80">Contact Number (optional)</label>
+            <label htmlFor="phone" className="text-sm font-medium text-foreground/80">Contact Number (optional)</label>
             <input
-              type="tel" 
-              name="phone" 
+              type="tel"
+              name="phone"
               id="phone"
               className="w-full px-4 py-2.5 rounded-lg border border-border/80 bg-background/50 focus:bg-background focus:outline-none focus:ring-2 focus:ring-foreground/20 transition-all"
               placeholder="+91 999 888 1122"
@@ -142,9 +142,9 @@ function ContactForm() {
           <label htmlFor="email" className="text-sm font-medium text-foreground/80">Email</label>
           <input
             type="email"
-            name="email" 
+            name="email"
             id="email"
-            required 
+            required
             className="w-full px-4 py-2.5 rounded-lg border border-border/80 bg-background/50 focus:bg-background focus:outline-none focus:ring-2 focus:ring-foreground/20 transition-all"
             placeholder="john@example.com"
           />
@@ -153,9 +153,9 @@ function ContactForm() {
         {/* Dropdown for Context Interest */}
         <div className="flex flex-col gap-1.5">
           <label className="text-sm font-medium text-foreground/80">How can I help you?</label>
-          <Select 
-            value={serviceValue} 
-            onValueChange={setServiceValue} 
+          <Select
+            value={serviceValue}
+            onValueChange={setServiceValue}
             required
           >
             <SelectTrigger className="w-full px-4 py-3.5 sm:py-2.5 rounded-lg border border-border/80 bg-background/50 hover:bg-background/80 focus:bg-background focus:outline-none focus:ring-2 focus:ring-foreground/20 transition-all h-auto text-base sm:text-sm">
@@ -176,11 +176,11 @@ function ContactForm() {
           <label htmlFor="subject" className="text-sm font-medium text-foreground/80">Subject</label>
           <input
             type="text"
-            name="subject" 
+            name="subject"
             id="subject"
             value={subjectValue}
             onChange={(e) => setSubjectValue(e.target.value)}
-            required 
+            required
             className="w-full px-4 py-2.5 rounded-lg border border-border/80 bg-background/50 focus:bg-background focus:outline-none focus:ring-2 focus:ring-foreground/20 transition-all"
             placeholder="How can I help you?"
           />
@@ -199,12 +199,12 @@ function ContactForm() {
           ></textarea>
         </div>
 
-        <button 
+        <button
           type="submit"
           disabled={isSubmitting}
           className="mt-2 w-full px-4 py-3 bg-foreground text-background font-medium rounded-lg hover:opacity-90 transition-opacity disabled:opacity-70 flex justify-center items-center h-13"
         >
-        {isSubmitting ? (
+          {isSubmitting ? (
             <span className="w-5 h-5 border-2 border-background/30 border-t-background rounded-full animate-spin"></span>
           ) : "Submit Message"}
         </button>
@@ -222,7 +222,7 @@ export default function Contact() {
         <p className="text-foreground/80 mb-10 leading-relaxed text-lg">
           I'm always open to discussing new projects, creative ideas, or opportunities to be part of your visions.
         </p>
-        
+
         <a
           href="mailto:abubakarhasan2505@gmail.com"
           className="group inline-flex items-center gap-3 text-lg sm:text-xl md:text-2xl font-medium tracking-tight text-foreground hover:opacity-70 transition-opacity"
@@ -233,6 +233,14 @@ export default function Contact() {
         <a href="https://www.instagram.com/abu_bakar_hasan" className="group inline-flex items-center gap-3 text-lg sm:text-xl md:text-2xl font-medium tracking-tight text-foreground hover:opacity-70 transition-opacity mt-4 lg:mt-6">
           <Instagram className="w-6 h-6 sm:w-7 sm:h-7 opacity-70 group-hover:opacity-100 shrink-0" />
           <span>abu_bakar_hasan</span>
+        </a>
+        <a href="https://www.facebook.com/profile.php?id=61582221622944" className="group inline-flex items-center gap-3 text-lg sm:text-xl md:text-2xl font-medium tracking-tight text-foreground hover:opacity-70 transition-opacity mt-4 lg:mt-6">
+          <Facebook className="w-6 h-6 sm:w-7 sm:h-7 opacity-70 group-hover:opacity-100 shrink-0" />
+          <span>Abu Bakar Hasan</span>
+        </a>
+        <a href="https://www.linkedin.com/in/abubakar-hasan-b58b8b1b1/" className="group inline-flex items-center gap-3 text-lg sm:text-xl md:text-2xl font-medium tracking-tight text-foreground hover:opacity-70 transition-opacity mt-4 lg:mt-6">
+          <Linkedin className="w-6 h-6 sm:w-7 sm:h-7 opacity-70 group-hover:opacity-100 shrink-0" />
+          <span>Abu Bakar Hasan</span>
         </a>
       </div>
 
