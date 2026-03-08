@@ -356,8 +356,6 @@ body {
 .contact-link-email:hover {
   background: oklch(from var(--foreground) l c h / 0.06);
   border-color: oklch(from var(--foreground) l c h / 0.22);
-  transform: translateY(-2px);
-  box-shadow: 0 6px 20px oklch(from var(--foreground) l c h / 0.08);
 }
 
 .contact-link-email:hover .contact-link-email__icon {
@@ -382,9 +380,7 @@ body {
   white-space: nowrap;
 }
 
-.contact-pill:hover {
-  transform: translateY(-2px);
-}
+
 
 /* Instagram gradient */
 .contact-pill--instagram:hover {
