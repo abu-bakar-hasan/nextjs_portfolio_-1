@@ -2,7 +2,7 @@
 
 import { useState, useEffect, Suspense } from "react";
 import { useSearchParams } from "next/navigation";
-import { Mail01Icon as Mail, InstagramIcon as Instagram, NewTwitterRectangleIcon as X, Facebook01Icon as Facebook, Linkedin01Icon as Linkedin } from "hugeicons-react";
+import { Mail01Icon as Mail, InstagramIcon as Instagram, NewTwitterRectangleIcon as X, Facebook01Icon as Facebook, Linkedin01Icon as Linkedin, Github01Icon as Github } from "hugeicons-react";
 import { toast } from "sonner";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 
@@ -244,6 +244,10 @@ export default function Contact() {
         </a>
         <a href="https://www.x.com/abu_bakar_hasan" className="group inline-flex items-center gap-3 text-lg sm:text-xl md:text-2xl font-medium tracking-tight text-foreground hover:opacity-70 transition-opacity mt-4 lg:mt-6">
           <X className="w-6 h-6 sm:w-7 sm:h-7 opacity-70 group-hover:opacity-100 shrink-0" />
+          <span>Abu Bakar Hasan</span>
+        </a>
+        <a href="https://github.com/abu-bakar-hasan" className="group inline-flex items-center gap-3 text-lg sm:text-xl md:text-2xl font-medium tracking-tight text-foreground hover:opacity-70 transition-opacity mt-4 lg:mt-6">
+          <Github className="w-6 h-6 sm:w-7 sm:h-7 opacity-70 group-hover:opacity-100 shrink-0" />
           <span>Abu Bakar Hasan</span>
         </a>
       </div>
