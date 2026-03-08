@@ -238,8 +238,12 @@ export default function Contact() {
           <Facebook className="w-6 h-6 sm:w-7 sm:h-7 opacity-70 group-hover:opacity-100 shrink-0" />
           <span>Abu Bakar Hasan</span>
         </a>
-        <a href="https://www.linkedin.com/in/abubakar-hasan-b58b8b1b1/" className="group inline-flex items-center gap-3 text-lg sm:text-xl md:text-2xl font-medium tracking-tight text-foreground hover:opacity-70 transition-opacity mt-4 lg:mt-6">
+        <a href="https://www.linkedin.com/in/abu-bakar-hasan" className="group inline-flex items-center gap-3 text-lg sm:text-xl md:text-2xl font-medium tracking-tight text-foreground hover:opacity-70 transition-opacity mt-4 lg:mt-6">
           <Linkedin className="w-6 h-6 sm:w-7 sm:h-7 opacity-70 group-hover:opacity-100 shrink-0" />
+          <span>Abu Bakar Hasan</span>
+        </a>
+        <a href="https://www.x.com/abu_bakar_hasan" className="group inline-flex items-center gap-3 text-lg sm:text-xl md:text-2xl font-medium tracking-tight text-foreground hover:opacity-70 transition-opacity mt-4 lg:mt-6">
+          <X className="w-6 h-6 sm:w-7 sm:h-7 opacity-70 group-hover:opacity-100 shrink-0" />
           <span>Abu Bakar Hasan</span>
         </a>
       </div>
