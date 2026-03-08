@@ -2,7 +2,7 @@
 
 import { useState, useEffect, Suspense } from "react";
 import { useSearchParams } from "next/navigation";
-import { Mail01Icon as Mail, InstagramIcon as Instagram, Cancel01Icon as X, Facebook01Icon as Facebook, Linkedin01Icon as Linkedin } from "hugeicons-react";
+import { Mail01Icon as Mail, InstagramIcon as Instagram, NewTwitterRectangleIcon as X, Facebook01Icon as Facebook, Linkedin01Icon as Linkedin } from "hugeicons-react";
 import { toast } from "sonner";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 
