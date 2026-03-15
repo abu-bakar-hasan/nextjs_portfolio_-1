@@ -220,7 +220,7 @@ export default function Contact() {
       <div className="w-full md:w-[40%] flex flex-col justify-center">
         <div className="mb-12">
           <h1 className="text-4xl sm:text-5xl font-bold leading-tight!">
-            Let&apos; build something great together.
+            Let&apos;s build something great together.
           </h1>
           <p className="mt-4 text-lg text-foreground/70">
             Have a project in mind or just want to say hi? I&apos;d love to hear from you.
