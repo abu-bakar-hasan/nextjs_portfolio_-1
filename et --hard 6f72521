@@ -1,0 +1,43 @@
+[33mae32fc0[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m Removed translateY
+[33mbf4f29a[m Added hover effects
+[33mb42df6f[m Add: github
+[33m265bfa0[m Updated x.com icon
+[33maef5599[m Add: x.com
+[33mda29706[m Add: linkedin and facebook
+[33m5945a61[m Updated blog post
+[33m5cd5c07[m Add: mongoDB and skeletop loading
+[33m6f72521[m Add projects and services on home
+[33m4cebbbc[m Updated resume page
+[33m454985c[m Add resume and increase icon color on about/technical skills
+[33mfe977ff[m feat: add attribution tracking via URL params on contact page
+[33m23a7d44[m Fixed meta title for blog post
+[33m6cf0bab[m Made the website fully functional
+[33mb4f37f0[m Added blog and blog post
+[33m9d75560[m Added services page
+[33m89a05b3[m mmmmm
+[33m988a348[m Minor tweak
+[33m8c604c4[m Changed logo
+[33m7a7d456[m Updated contact page
+[33me4b5eb1[m Tweak in sun and moon icons
+[33m5760f31[m Lucide icons --> Huge Icons
+[33m174e6e3[m Added shadcn ui toast in contact
+[33m50f9e47[m Updated contact telephone placeholder
+[33m6a4fa6d[m Removed unused codes
+[33m3937c45[m Added skiper-ui dark/light toggle
+[33m10a34a1[m Fixed color of not-found
+[33m96c2f43[m Update for dark/light mode
+[33m551e9da[m Updated not found
+[33m7588b0d[m Updated loader animation
+[33m0b58c76[m Updated loader
+[33mab24b65[m General update
+[33mca42d44[m Fixed image in hero section and updated footer
+[33mc6d55b0[m Added form integration
+[33m42cf6fd[m Updated title
+[33m8c516d0[m Update for mobile responsiveness
+[33mbdce9a2[m Updated hero section
+[33m5b697e9[m Updated mobile navigation
+[33m7dd075d[m Make navbar and footer responsive
+[33m3539ebe[m feat: Replace Next.js loading.tsx with guaranteed Initial Splash Screen loader (2.5s duration)
+[33m8fe0de3[m fix: Wrap route-loader in Suspense to prevent useSearchParams build bailout
+[33m75796ca[m first commit
+[33md6ee665[m Initial commit from Create Next App
