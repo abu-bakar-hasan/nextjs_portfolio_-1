@@ -2,7 +2,7 @@
 
 import { useState, useEffect, Suspense } from "react";
 import { useSearchParams } from "next/navigation";
-import { Mail01Icon as Mail, InstagramIcon as Instagram, Cancel01Icon as X } from "hugeicons-react";
+import { Mail01Icon as Mail, InstagramIcon, NewTwitterIcon, Facebook01Icon, Linkedin01Icon, Cancel01Icon as X } from "hugeicons-react";
 import { toast } from "sonner";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 
@@ -105,7 +105,7 @@ function ContactForm() {
   return (
     <>
       {showBanner && getBannerText() && (
-        <div className="flex items-center justify-between gap-4 px-4 py-3 mb-6 bg-foreground/[0.03] border border-border/50 text-foreground/80 text-sm font-medium rounded-lg">
+        <div className="flex items-center justify-between gap-4 px-4 py-3 mb-6 bg-foreground/3 border border-border/50 text-foreground/80 text-sm font-medium rounded-lg">
           <span>{getBannerText()}</span>
           <button type="button" onClick={() => setShowBanner(false)} className="opacity-50 hover:opacity-100 transition-opacity">
             <X className="w-4 h-4" />
@@ -162,12 +162,12 @@ function ContactForm() {
               <SelectValue placeholder="Select a service..." />
             </SelectTrigger>
             <SelectContent className="bg-background border-border/80 text-foreground">
-              <SelectItem value="Custom Web Development" className="cursor-pointer hover:bg-foreground/[0.03]">Custom Web Development</SelectItem>
-              <SelectItem value="System Design Consultation" className="cursor-pointer hover:bg-foreground/[0.03]">System Design Consultation</SelectItem>
-              <SelectItem value="UI to Code" className="cursor-pointer hover:bg-foreground/[0.03]">UI to Code</SelectItem>
-              <SelectItem value="Performance Audit" className="cursor-pointer hover:bg-foreground/[0.03]">Performance Audit</SelectItem>
-              <SelectItem value="Read a blog post, have a question" className="cursor-pointer hover:bg-foreground/[0.03]">Read a blog post, have a question</SelectItem>
-              <SelectItem value="Something else" className="cursor-pointer hover:bg-foreground/[0.03]">Something else</SelectItem>
+              <SelectItem value="Custom Web Development" className="cursor-pointer hover:bg-foreground/3">Custom Web Development</SelectItem>
+              <SelectItem value="System Design Consultation" className="cursor-pointer hover:bg-foreground/3">System Design Consultation</SelectItem>
+              <SelectItem value="UI to Code" className="cursor-pointer hover:bg-foreground/3">UI to Code</SelectItem>
+              <SelectItem value="Performance Audit" className="cursor-pointer hover:bg-foreground/3">Performance Audit</SelectItem>
+              <SelectItem value="Read a blog post, have a question" className="cursor-pointer hover:bg-foreground/3">Read a blog post, have a question</SelectItem>
+              <SelectItem value="Something else" className="cursor-pointer hover:bg-foreground/3">Something else</SelectItem>
             </SelectContent>
           </Select>
         </div>
@@ -217,29 +217,52 @@ export default function Contact() {
   return (
     <div className="w-full max-w-6xl mx-auto px-8 py-12 sm:py-20 flex flex-col md:flex-row gap-12 sm:gap-16 min-h-[70vh] justify-between">
       {/* Left Area: Text & Email */}
-      <div className="max-w-xl w-full md:w-[45%] flex flex-col pt-4 sm:pt-10">
-        <h1 className="text-3xl sm:text-4xl font-semibold tracking-tight mb-6">Let's Connect</h1>
-        <p className="text-foreground/80 mb-10 leading-relaxed text-lg">
-          I'm always open to discussing new projects, creative ideas, or opportunities to be part of your visions.
-        </p>
-        
-        <a
-          href="mailto:abubakarhasan2505@gmail.com"
-          className="group inline-flex items-center gap-3 text-lg sm:text-xl md:text-2xl font-medium tracking-tight text-foreground hover:opacity-70 transition-opacity"
-        >
-          <Mail className="w-6 h-6 sm:w-7 sm:h-7 opacity-70 group-hover:opacity-100 shrink-0" />
-          <span>abubakarhasan2505@gmail.com</span>
-        </a>
-        <a href="https://www.instagram.com/abu_bakar_hasan" className="group inline-flex items-center gap-3 text-lg sm:text-xl md:text-2xl font-medium tracking-tight text-foreground hover:opacity-70 transition-opacity mt-4 lg:mt-6">
-          <Instagram className="w-6 h-6 sm:w-7 sm:h-7 opacity-70 group-hover:opacity-100 shrink-0" />
-          <span>abu_bakar_hasan</span>
-        </a>
+      <div className="w-full md:w-[40%] flex flex-col justify-center">
+        <div className="mb-12">
+          <h1 className="text-4xl sm:text-5xl font-bold leading-tight!">
+            Let&apos; build something great together.
+          </h1>
+          <p className="mt-4 text-lg text-foreground/70">
+            Have a project in mind or just want to say hi? I&apos;d love to hear from you.
+          </p>
+        </div>
+
+        <div className="flex flex-col gap-6">
+          <a href="mailto:abubakar.hasan.dev@gmail.com" className="flex items-center gap-4 p-4 rounded-xl border border-border/60 bg-card/50 hover:bg-card/80 transition-colors w-full">
+            <div className="p-2.5 bg-foreground/5 border border-border/50 rounded-lg">
+              <Mail className="w-6 h-6 text-foreground/80" />
+            </div>
+            <div className="flex flex-col">
+              <span className="font-medium">abubakar.hasan.dev@gmail.com</span>
+              <span className="text-sm text-foreground/60">Click to write me an email</span>
+            </div>
+          </a>
+
+          <div className="flex flex-wrap gap-3">
+            <a href="https://www.instagram.com/abu_bakar_hasan" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-foreground/15 bg-foreground/5 text-foreground/70 transition-all duration-200 hover:bg-[#E1306C] hover:text-white">
+              <InstagramIcon size={16} />
+              <span>Instagram</span>
+            </a>
+            <a href="#" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-foreground/15 bg-foreground/5 text-foreground/70 transition-all duration-200 hover:bg-[#000000] hover:text-white">
+              <NewTwitterIcon size={16} />
+              <span>Twitter</span>
+            </a>
+            <a href="#" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-foreground/15 bg-foreground/5 text-foreground/70 transition-all duration-200 hover:bg-[#1877F2] hover:text-white">
+              <Facebook01Icon size={16} />
+              <span>Facebook</span>
+            </a>
+            <a href="#" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-foreground/15 bg-foreground/5 text-foreground/70 transition-all duration-200 hover:bg-[#0A66C2] hover:text-white">
+              <Linkedin01Icon size={16} />
+              <span>LinkedIn</span>
+            </a>
+          </div>
+        </div>
       </div>
 
       {/* Right Area: Form */}
       <div className="w-full md:w-[55%] border border-border/60 rounded-2xl p-6 sm:p-8 bg-card/30 backdrop-blur-sm shadow-sm">
         <h2 className="text-xl font-medium mb-6">Get in touch</h2>
-        <Suspense fallback={<div className="h-[400px] flex items-center justify-center text-foreground/50 text-sm font-medium animate-pulse">Loading form...</div>}>
+        <Suspense fallback={<div className="h-100 flex items-center justify-center text-foreground/50 text-sm font-medium animate-pulse">Loading form...</div>}>
           <ContactForm />
         </Suspense>
       </div>
