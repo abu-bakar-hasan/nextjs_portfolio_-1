@@ -240,19 +240,19 @@ export default function Contact() {
 
           <div className="flex flex-wrap gap-3">
             <a href="https://www.instagram.com/abu_bakar_hasan" target="_blank" rel="noopener noreferrer" className="group inline-flex items-center gap-2 px-4 py-2 rounded-full border border-foreground/15 bg-foreground/5 text-foreground/70 transition-all duration-500 ease-out hover:-translate-y-1.5 hover:border-transparent hover:bg-[linear-gradient(45deg,#f09433,#e6683c,#dc2743,#cc2366,#bc1888)] hover:text-white hover:shadow-[0_8px_20px_-6px_rgba(225,48,108,0.6)]">
-              <InstagramIcon size={16} className="transition-transform duration-500 ease-out group-hover:scale-110" />
+              <InstagramIcon size={16} className="transition-transform duration-500 ease-out" />
               <span>Instagram</span>
             </a>
             <a href="https://x.com/abu_bakar_hasan" target="_blank" rel="noopener noreferrer" className="group inline-flex items-center gap-2 px-4 py-2 rounded-full border border-foreground/15 bg-foreground/5 text-foreground/70 transition-all duration-500 ease-out hover:-translate-y-1.5 hover:border-transparent hover:bg-black hover:text-white hover:shadow-[0_8px_20px_-6px_rgba(0,0,0,0.6)] dark:hover:bg-white dark:hover:text-black dark:hover:shadow-[0_8px_20px_-6px_rgba(255,255,255,0.6)]">
-              <NewTwitterIcon size={16} className="transition-transform duration-500 ease-out group-hover:scale-110" />
+              <NewTwitterIcon size={16} className="transition-transform duration-500 ease-out" />
               <span>Twitter</span>
             </a>
             <a href="https://www.facebook.com/share/1HJh6Xhwuc/" target="_blank" rel="noopener noreferrer" className="group inline-flex items-center gap-2 px-4 py-2 rounded-full border border-foreground/15 bg-foreground/5 text-foreground/70 transition-all duration-500 ease-out hover:-translate-y-1.5 hover:border-transparent hover:bg-[#1877F2] hover:text-white hover:shadow-[0_8px_20px_-6px_rgba(24,119,242,0.6)]">
-              <Facebook02Icon size={16} className="transition-transform duration-500 ease-out group-hover:scale-110" />
+              <Facebook02Icon size={16} className="transition-transform duration-500 ease-out" />
               <span>Facebook</span>
             </a>
             <a href="https://www.linkedin.com/in/abu-bakar-hasan" target="_blank" rel="noopener noreferrer" className="group inline-flex items-center gap-2 px-4 py-2 rounded-full border border-foreground/15 bg-foreground/5 text-foreground/70 transition-all duration-500 ease-out hover:-translate-y-1.5 hover:border-transparent hover:bg-[#0A66C2] hover:text-white hover:shadow-[0_8px_20px_-6px_rgba(10,102,194,0.6)]">
-              <Linkedin02Icon size={16} className="transition-transform duration-500 ease-out group-hover:scale-110" />
+              <Linkedin02Icon size={16} className="transition-transform duration-500 ease-out" />
               <span>LinkedIn</span>
             </a>
           </div>
