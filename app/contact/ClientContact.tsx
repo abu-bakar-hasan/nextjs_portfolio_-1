@@ -2,7 +2,7 @@
 
 import { useState, useEffect, Suspense } from "react";
 import { useSearchParams } from "next/navigation";
-import { Mail01Icon as Mail, InstagramIcon, NewTwitterIcon, Facebook01Icon, Linkedin01Icon, Cancel01Icon as X } from "hugeicons-react";
+import { Mail01Icon as Mail, InstagramIcon, NewTwitterIcon, Facebook02Icon, Linkedin02Icon, Cancel01Icon as X } from "hugeicons-react";
 import { toast } from "sonner";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 
@@ -228,12 +228,12 @@ export default function Contact() {
         </div>
 
         <div className="flex flex-col gap-6">
-          <a href="mailto:abubakar.hasan.dev@gmail.com" className="flex items-center gap-4 p-4 rounded-xl border border-border/60 bg-card/50 hover:bg-card/80 transition-colors w-full">
+          <a href="mailto:abubakarhasan2505@gmail.com" className="flex items-center gap-4 p-4 rounded-xl border border-border/60 bg-card/50 hover:bg-card/80 transition-colors w-full">
             <div className="p-2.5 bg-foreground/5 border border-border/50 rounded-lg">
               <Mail className="w-6 h-6 text-foreground/80" />
             </div>
             <div className="flex flex-col">
-              <span className="font-medium">abubakar.hasan.dev@gmail.com</span>
+              <span className="font-medium">abubakrhasan2505@gmail.com</span>
               <span className="text-sm text-foreground/60">Click to write me an email</span>
             </div>
           </a>
@@ -243,16 +243,16 @@ export default function Contact() {
               <InstagramIcon size={16} />
               <span>Instagram</span>
             </a>
-            <a href="#" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-foreground/15 bg-foreground/5 text-foreground/70 transition-all duration-200 hover:bg-[#000000] hover:text-white">
+            <a href="https://x.com/abu_bakar_hasan" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-foreground/15 bg-foreground/5 text-foreground/70 transition-all duration-200 hover:bg-[#000000] hover:text-white">
               <NewTwitterIcon size={16} />
               <span>Twitter</span>
             </a>
-            <a href="#" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-foreground/15 bg-foreground/5 text-foreground/70 transition-all duration-200 hover:bg-[#1877F2] hover:text-white">
-              <Facebook01Icon size={16} />
+            <a href="https://www.facebook.com/share/1HJh6Xhwuc/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-foreground/15 bg-foreground/5 text-foreground/70 transition-all duration-200 hover:bg-[#1877F2] hover:text-white">
+              <Facebook02Icon size={16} />
               <span>Facebook</span>
             </a>
             <a href="#" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-foreground/15 bg-foreground/5 text-foreground/70 transition-all duration-200 hover:bg-[#0A66C2] hover:text-white">
-              <Linkedin01Icon size={16} />
+              <Linkedin02Icon size={16} />
               <span>LinkedIn</span>
             </a>
           </div>
