@@ -228,31 +228,31 @@ export default function Contact() {
         </div>
 
         <div className="flex flex-col gap-6">
-          <a href="mailto:abubakarhasan2505@gmail.com" className="flex items-center gap-4 p-4 rounded-xl border border-border/60 bg-card/50 hover:bg-card/80 transition-colors w-full">
-            <div className="p-2.5 bg-foreground/5 border border-border/50 rounded-lg">
-              <Mail className="w-6 h-6 text-foreground/80" />
+          <a href="mailto:abubakarhasan2505@gmail.com" className="group flex items-center gap-4 p-4 rounded-xl border border-border/60 bg-card/50 transition-all duration-500 ease-out hover:bg-card/80 hover:-translate-y-1 hover:border-border/80 hover:shadow-[0_8px_24px_-12px_rgba(0,0,0,0.2)] dark:hover:shadow-[0_8px_24px_-12px_rgba(255,255,255,0.1)] w-full">
+            <div className="p-2.5 bg-foreground/5 border border-border/50 rounded-lg transition-all duration-500 ease-out group-hover:scale-105 group-hover:bg-foreground/10 group-hover:border-border/80">
+              <Mail className="w-6 h-6 text-foreground/80 transition-colors duration-500 group-hover:text-foreground" />
             </div>
             <div className="flex flex-col">
-              <span className="font-medium">abubakrhasan2505@gmail.com</span>
-              <span className="text-sm text-foreground/60">Click to write me an email</span>
+              <span className="font-medium transition-colors duration-500 group-hover:text-foreground">abubakrhasan2505@gmail.com</span>
+              <span className="text-sm text-foreground/60 transition-colors duration-500 group-hover:text-foreground/80">Click to write me an email</span>
             </div>
           </a>
 
           <div className="flex flex-wrap gap-3">
-            <a href="https://www.instagram.com/abu_bakar_hasan" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-foreground/15 bg-foreground/5 text-foreground/70 transition-all duration-200 hover:bg-[#E1306C] hover:text-white">
-              <InstagramIcon size={16} />
+            <a href="https://www.instagram.com/abu_bakar_hasan" target="_blank" rel="noopener noreferrer" className="group inline-flex items-center gap-2 px-4 py-2 rounded-full border border-foreground/15 bg-foreground/5 text-foreground/70 transition-all duration-500 ease-out hover:-translate-y-1.5 hover:border-transparent hover:bg-[linear-gradient(45deg,#f09433,#e6683c,#dc2743,#cc2366,#bc1888)] hover:text-white hover:shadow-[0_8px_20px_-6px_rgba(225,48,108,0.6)]">
+              <InstagramIcon size={16} className="transition-transform duration-500 ease-out group-hover:scale-110" />
               <span>Instagram</span>
             </a>
-            <a href="https://x.com/abu_bakar_hasan" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-foreground/15 bg-foreground/5 text-foreground/70 transition-all duration-200 hover:bg-[#000000] hover:text-white">
-              <NewTwitterIcon size={16} />
+            <a href="https://x.com/abu_bakar_hasan" target="_blank" rel="noopener noreferrer" className="group inline-flex items-center gap-2 px-4 py-2 rounded-full border border-foreground/15 bg-foreground/5 text-foreground/70 transition-all duration-500 ease-out hover:-translate-y-1.5 hover:border-transparent hover:bg-black hover:text-white hover:shadow-[0_8px_20px_-6px_rgba(0,0,0,0.6)] dark:hover:bg-white dark:hover:text-black dark:hover:shadow-[0_8px_20px_-6px_rgba(255,255,255,0.6)]">
+              <NewTwitterIcon size={16} className="transition-transform duration-500 ease-out group-hover:scale-110" />
               <span>Twitter</span>
             </a>
-            <a href="https://www.facebook.com/share/1HJh6Xhwuc/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-foreground/15 bg-foreground/5 text-foreground/70 transition-all duration-200 hover:bg-[#1877F2] hover:text-white">
-              <Facebook02Icon size={16} />
+            <a href="https://www.facebook.com/share/1HJh6Xhwuc/" target="_blank" rel="noopener noreferrer" className="group inline-flex items-center gap-2 px-4 py-2 rounded-full border border-foreground/15 bg-foreground/5 text-foreground/70 transition-all duration-500 ease-out hover:-translate-y-1.5 hover:border-transparent hover:bg-[#1877F2] hover:text-white hover:shadow-[0_8px_20px_-6px_rgba(24,119,242,0.6)]">
+              <Facebook02Icon size={16} className="transition-transform duration-500 ease-out group-hover:scale-110" />
               <span>Facebook</span>
             </a>
-            <a href="#" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-foreground/15 bg-foreground/5 text-foreground/70 transition-all duration-200 hover:bg-[#0A66C2] hover:text-white">
-              <Linkedin02Icon size={16} />
+            <a href="https://www.linkedin.com/in/abu-bakar-hasan" target="_blank" rel="noopener noreferrer" className="group inline-flex items-center gap-2 px-4 py-2 rounded-full border border-foreground/15 bg-foreground/5 text-foreground/70 transition-all duration-500 ease-out hover:-translate-y-1.5 hover:border-transparent hover:bg-[#0A66C2] hover:text-white hover:shadow-[0_8px_20px_-6px_rgba(10,102,194,0.6)]">
+              <Linkedin02Icon size={16} className="transition-transform duration-500 ease-out group-hover:scale-110" />
               <span>LinkedIn</span>
             </a>
           </div>
