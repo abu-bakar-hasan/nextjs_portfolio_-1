@@ -290,3 +290,81 @@ body {
 
 /* Hidden on screen, shown only on print */
 #print-resume { display: none; }
+
+/* NOTE BODY STYLES (Markdown Prose) */
+.note-body {
+  display: flex;
+  flex-direction: column;
+}
+.note-body h2 {
+  font-family: inherit;
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  font-weight: 600;
+  color: var(--foreground);
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+}
+.note-body h3 {
+  font-family: inherit;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 600;
+  color: var(--foreground);
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+}
+.note-body p {
+  line-height: 1.75;
+  color: var(--foreground);
+  margin-bottom: 1.25rem;
+}
+.note-body ul, .note-body ol {
+  padding-left: 1.5rem;
+  margin-bottom: 1.25rem;
+}
+.note-body ul {
+  list-style-type: disc;
+}
+.note-body ol {
+  list-style-type: decimal;
+}
+.note-body li {
+  color: var(--foreground);
+  line-height: 1.75;
+  margin-bottom: 0.5rem;
+}
+.note-body li > p {
+  margin-bottom: 0;
+}
+.note-body code:not(pre code) {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  background-color: var(--card);
+  padding: 0.2rem 0.4rem;
+  border-radius: var(--radius, 0.25rem);
+  font-size: 0.875em;
+}
+.note-body pre {
+  border-radius: var(--radius, 0.5rem);
+  overflow-x: auto;
+  margin-bottom: 1.5rem;
+}
+.note-body blockquote {
+  border-left: 4px solid var(--accent);
+  padding-left: 1rem;
+  color: var(--muted-foreground);
+  margin-bottom: 1.5rem;
+  font-style: italic;
+}
+.note-body hr {
+  border: none;
+  border-top: 1px solid var(--border);
+  margin: 2rem 0;
+}
+.note-body a {
+  color: var(--foreground);
+  text-decoration: none;
+}
+.note-body a:hover {
+  text-decoration: underline;
+}
